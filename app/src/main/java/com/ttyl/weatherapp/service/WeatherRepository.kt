@@ -4,6 +4,11 @@ import com.ttyl.weatherapp.domain.Location
 import com.ttyl.weatherapp.domain.WeatherShort
 import retrofit2.Call
 
+/**
+ * We can add ROOM persistence later and store all the saved weather data with a 12 hour
+ * expiration here. Right now we only store the last searched lat and long in
+ * shared prefs.
+ */
 class WeatherRepository(private val weatherService: WeatherService?) {
 
     fun getWeather(lat: String, long: String, key: String,
