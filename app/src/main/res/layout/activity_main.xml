@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherActivity">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/weather_search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/ic_search_fill0_wght400_grad0_opsz24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/n_a"
+        app:layout_constraintBottom_toBottomOf="@+id/weather_icon"
+        app:layout_constraintStart_toEndOf="@+id/weather_icon" />
+
+    <TextView
+        android:id="@+id/temperatureTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/temp_title"
+        app:layout_constraintStart_toStartOf="@+id/weather_icon"
+        app:layout_constraintTop_toBottomOf="@+id/weather_icon" />
+
+    <TextView
+        android:id="@+id/feels_like_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/feels_like_title"
+        app:layout_constraintStart_toStartOf="@+id/temperatureTitle"
+        app:layout_constraintTop_toBottomOf="@+id/temperatureTitle" />
+
+    <TextView
+        android:id="@+id/wind_direction_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/wind_direction_title"
+        app:layout_constraintStart_toStartOf="@+id/temperatureTitle"
+        app:layout_constraintTop_toBottomOf="@+id/wind_speed_title" />
+
+    <TextView
+        android:id="@+id/wind_speed_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/wind_speed_title"
+        app:layout_constraintStart_toStartOf="@+id/temperatureTitle"
+        app:layout_constraintTop_toBottomOf="@+id/feels_like_title" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="@string/n_a"
+        app:layout_constraintStart_toEndOf="@+id/temperatureTitle"
+        app:layout_constraintTop_toTopOf="@+id/temperatureTitle" />
+
+    <TextView
+        android:id="@+id/feels_like"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:text="@string/n_a"
+        app:layout_constraintStart_toStartOf="@+id/temperature"
+        app:layout_constraintTop_toTopOf="@+id/feels_like_title" />
+
+    <TextView
+        android:id="@+id/wind_speed"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:text="@string/n_a"
+        app:layout_constraintStart_toStartOf="@+id/feels_like"
+        app:layout_constraintTop_toTopOf="@+id/wind_speed_title" />
+
+    <TextView
+        android:id="@+id/wind_direction"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:text="@string/n_a"
+        app:layout_constraintStart_toStartOf="@+id/wind_speed"
+        app:layout_constraintTop_toTopOf="@+id/wind_direction_title" />
+
+    <TextView
+        android:id="@+id/weather_description"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/n_a"
+        app:layout_constraintStart_toStartOf="@+id/wind_direction_title"
+        app:layout_constraintTop_toBottomOf="@+id/wind_direction_title" />
+
+    <ImageView
+        android:id="@+id/weather_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

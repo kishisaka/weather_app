@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Weather APP</string>
+    <string name="error_search">Improper search criteria. Search query must be a known city,state in the USA</string>
+    <string name="weather_description">The current weather is %s with winds blowing %s degrees at %s mph, gusting to %s mph.</string>
+    <string name="temp">%s F</string>
+    <string name="feels_like">%s F</string>
+    <string name="wind">%s MPH</string>
+    <string name="gust">%s MPH</string>
+    <string name="temp_title">Temperature</string>
+    <string name="feels_like_title">Feels Like</string>
+    <string name="wind_speed_title">Wind Speed</string>
+    <string name="wind_direction_title">Wind Direction</string>
+    <string name="n_a">N/A</string>
+    <string name="empty_search_error">Empty searches are not allowed.</string>
+    <string name="server_failure_no_location">No weather information due to GPS, permissions and/or weather server is not available."</string>
+
+</resources>
