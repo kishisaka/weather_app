@@ -4,6 +4,10 @@ import android.app.Activity
 
 class WeatherBusiness(val activity: Activity) {
 
+    /**
+     * put all the business logic here, inject all the dependencies here as well.
+     */
+
     companion object {
         const val WEATHER_API_KEY = "<your open weather map API key goes here>"
         const val REQUEST = 1000

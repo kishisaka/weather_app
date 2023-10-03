@@ -7,9 +7,7 @@ import android.location.Location
 import androidx.core.app.ActivityCompat
 import com.google.android.gms.location.LocationServices
 
-/**
- * put all the business logic here, inject all the dependencies here as well.
- */
+
 class LocationProvider {
     fun getCurrentLocation(locationCallback: LocationCallback, activity: Activity) {
         val fusedLocationClient = LocationServices.getFusedLocationProviderClient(activity)
