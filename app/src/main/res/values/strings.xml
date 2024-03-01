@@ -5,7 +5,7 @@
     <string name="temp">%s F</string>
     <string name="feels_like">%s F</string>
     <string name="wind">%s MPH</string>
-    <string name="gust">%s MPH</string>
+    <string name="gust">%s deg</string>
     <string name="temp_title">Temperature</string>
     <string name="feels_like_title">Feels Like</string>
     <string name="wind_speed_title">Wind Speed</string>

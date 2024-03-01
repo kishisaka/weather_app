@@ -61,7 +61,7 @@ class WeatherActivity : AppCompatActivity() {
         binding.temperature.text = getString(R.string.temp).format(weather.main.temp)
         binding.feelsLike.text = getString(R.string.temp).format(weather.main.feelsLike)
         binding.windSpeed.text = getString(R.string.wind).format(weather.wind.speed)
-        binding.windDirection.text = getString(R.string.gust).format(weather.wind.gust)
+        binding.windDirection.text = getString(R.string.gust).format(weather.wind.deg)
         binding.location.text = weather.name
         binding.weatherDescription.text = getString(R.string.weather_description).format(weather.weather[0].description, weather.wind.deg, weather.wind.speed, weather.wind.gust)
         Glide.with(this).load("https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png").into(binding.weatherIcon)
